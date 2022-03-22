@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반다이남코코리아</title>
+    <Style>
+        *{margin:0; padding:0; list-style:none;} /* 초기화 */
+        #wrap{} /* 전체 테두리 */
+        .container{position:relative; overflow:hidden; width:1536px; margin:0 auto; padding:160px 0; box-sizing: border-box;} /* 공통 사용 컨테이너 */
+        .title{
+             font-size: 17px;
+             font-weight:600;
+             color:#888;
+             letter-spacing: 2px;
+             text-align:center;
+             
+        }
+        .info{
+            padding:40px 0 90px 0;
+            font-size:36px;
+            font-weight:600;
+            text-align: center;
+        }
+        .txt{
+            position:relative;
+            overflow: hidden;
+            width:100%
+        }
+        .txt .left{float:left; width:680px;}
+        .txt .left p{padding-bottom:10px; font-size:18px; font-weight:600;}
+        .txt .left span{font-size:18px; font-weight:600;}
+        .txt .right{float:right; width:790px;}
+        .txt .right p{font-size:14px; line-height: 28px; color:#888; }
+        header{height:84px; border-bottom:1px solid #eee; }
+        header .container{height:90px;padding:0;} /* 헤더의 컨테이너만 높이 값 지정 */
+        h1{position:absolute; top:10px;} /* 로고 */
+        nav{position:relative; width:380px; margin:0 auto; padding-top: 15px;} /* 메뉴 */
+        nav ul li{float:left;} /*메뉴 가로 정렬*/
+        nav ul li a{display:block; padding:15px 25px; text-decoration: none; color:#333; font-weight:600;}
+        footer{height:90px; color:#888; background:#121212;}
+        #contents{}
+
+        #section_1{
+            padding: 133px 0 133px 0;
+            text-align:center;
+            border-bottom:1px solid #eee;
+        }
+        #section_1 h2{font-size:42px; letter-spacing:-1px;}
+        #section_1 P{padding:20px 0 50px 0; color:#949494;}
+        #section_2 .container{border-bottom:1px solid #e5e5e5;}
+    
+       #section_3 .message{width:760px; margin:0 auto;}                       
+       #section_3 .message p{padding-bottom:40px; line-height:30px;}
+       #section_3 .message span{display:block; text-align:right;}
+       #section_3 .message p:last-child{padding:0; text-align: right;}
+       #section_3 .container{border-bottom:1px solid #e5e5e5;}
+       
+       #section_4 .txt .left p{font-size:45px;}
+       #section_4 .txt .right p{color:#666666; font-weight:600;}
+       #section_4 .container{border-bottom:1px solid #e5e5e5;}
+       #section_4{background:url(../반다이남코코리아/images/section_4_bg.gif) repeat-x #f7f7f7;}
+       #section_4 .item{
+           overflow:hidden;
+           margin-top:120px;
+       }
+       #section_4 .item ul{float:left;}
+       #section_4 .item ul li{float:left; width:25%;}
+       #section_4 .item ul li dl{width:90% ; margin:0 auto;}
+       #section_4 .item ul li dl dt{height:92px; font-weight:600; border-top:2px solid #ccc; border-bottom:2px solid #ccc;}
+       #section_4 .item ul li dl dt p{width:80%; height:45px; line-height:45px; margin-top:25px;}
+       #section_4 .item ul li:nth-child(2) dl dt p{line-height:22px;}
+       #section_4 .item ul li dl dd{min-height:175px; padding-top:25px; line-height: 28px;} 
+       #section_4 .item ul li:nth-child(1) dt{background:url(../반다이남코코리아/images/ico_1.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(2) dt{background:url(../반다이남코코리아/images/ico_2.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(3) dt{background:url(../반다이남코코리아/images/ico_3.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(4) dt{background:url(../반다이남코코리아/images/ico_4.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(5) dt{background:url(../반다이남코코리아/images/ico_5.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(6) dt{background:url(../반다이남코코리아/images/ico_6.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(7) dt{background:url(../반다이남코코리아/images/ico_7.gif) no-repeat right center;} 
+       #section_4 .item ul li:nth-child(8) dt{background:url(../반다이남코코리아/images/ico_8.gif) no-repeat right center;}  
+       
+       #section_5{padding:133px 0 130px 0; text-align:center;}
+       .org{width:1500px; margin:0 auto;}
+
+       footer{padding:10px 0;}
+		footer .container{padding:0;}
+		footer .copyright{float:left; font-size:14px; margin-top:25px;}
+		footer .link{float:right; margin-top:25px;}
+		footer .link .sns{float:left; margin-right:15px;}
+		footer .link .familly{float:right;}
+		footer .link .familly select{padding:5px; color:#fff; background:#000; border:1px solid #333;}
+    </Style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div class="container">
+            <h1><img src="images/로고1.gif" alt=반다이남코코리아></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">브랜드소개</a></li>
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">채용공고</a></li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <section id="contents">
+            <!--브랜드 소개-->
+            <div id="section_1">
+                <h2>브랜드소개</h2>
+                <P>Dreams, Fun and inspiration</P>
+                <img src="images/로고2.jpg">
+            </div>  
+            <!--philosophy-->
+            <div id="section2">
+                <div class="container">
+                 <p class="title">PHILOSOPHY</p>
+                 <p class="info">꿈, 창조 행복한 시간을 만드는 기업<br>반다이남코코리아</p>
+                 <div>
+                     <video poster="images/로고2.jpg"
+                     width="1550" height="1080" controls="controls">
+                     <source src="vod/bandai_cm.mp4" type="video/mp4">
+                     <source src="vod/bandai_cm.webm" type="video/webm">
+                    </video>
+                    </div>
+                 <div class="txt">
+                     <div class="left">
+                         <p>Dreams. Fun and Inspriration</p>
+                         <span>놀라운 감동을 드립니다.</span>
+                     </div>
+                     <div class="right">
+                         <p>
+                             진정한 글로벌 기업으로서 전 세계 사용자에게 꿈과 감동을 전합니다. 현재를 살아가는 힘과 미래를 내다보는 의지를 우리에게 제공하는 것은 꿈과 감동입니다. 꿈과 감동은 마음 깊숙한 곳에서 삶의 버팀목이 되고 우리를 격려하며 이끄는 더없이 소중한 존재입니다. 저희 반다이남코코리아는 「꿈·놀이·감동」을 전달하는 기업으로서, 「Fun For the Future! 즐기면서, 즐거운 미래에.」를 표어로 항상 모든 사람들에게 꿈과 감동을 지속적으로 제공하기 위해 노력합니다.
+                         </p>
+                     </div>
+                 </div>
+            </div>
+            </div>
+            <!--CEO 메세지-->
+            <div id="section_3">
+                <div class="container">
+                <p class="title">CEO MESSAGE</p>
+                <p class="info">Next Stage를 향해<br>도전/성장/진화 하고 있습니다</p>
+            <div class="message">
+                <p>반다이남코그룹은 상품과 서비스를 통해 꿈, 놀이, 감동을 제공하는 것을 미션으로 삼고, 비전인 ‘세계에서 가장 기대되는 엔터테인먼트 기업 그룹’이 되는 것을 목표로 하고 있습니다. 2000년에 회사를 설립한 이래로 벌써 20년이 지났습니다. 항상 자사의 상품과 서비스를 사랑해 주시는 고객님들께 깊은 감사의 말씀을 드립니다. 현재 반다이남코코리아는 프라모델, 피규어, 완구, 잡화, 게임 사업 등 다양한 사업을 전개하고 있으며 고객님과 직접 만날 수 있는 전국의 ‘건담 베이스’, 온라인 공식 쇼핑몰 ‘반다이남코코리아몰’ 등의 운영도 함께하고 있습니다.</p>
+                 <p>지금 세계는 나날이 크게 변하고 있습니다. 엔터테인먼트 분야도 디지털화되고 고객님의 라이프스타일도 점차 다양하게 변화할 것입니다. 저희도 그에 대응하여 계속해서 꿈, 놀이, 감동을 고객님께 제공할 수 있는 기업이 되고자 합니다. 앞으로 더욱 발전해 나갈 반다이남코코리아에 많은 기대 부탁드립니다.</p>
+                <p>Bandai Namco Korea Ceo - Yamamichi Fumiaki</p>
+            </div>
+            </div>
+            </div>
+            <!--CSR-->
+            <div id="section_4">
+                <div class="container">
+                    <p class="title">C S R</p>
+                    <p class="info">BANDAI NAMCO Group CSR Activities</p>
+                    <div>
+                        <img src="images/pic.jpg">
+                    </div>
+                    <div class="txt">
+                        <div class="left">
+                            <p>Lead to the happiness</p>
+                            <span>즐거움을, 즐거운 미래로!</span>
+                        </div>
+                        <div class="right">
+                            <p>
+                                CSR은 Corporate Social Responsibility의 약자로, 기업의 사회적 책임을 의미합니다. 기업이란, 이익을 목적으로 상품을 만들거나, 판매하거나, 서비스를 제공하는 회사 등의 조직을 말하며, 반다이남코코리아는 장난감을 만들어 판매하는 회사입니다. 기업은 이익을 추구하는 것뿐만이 아닌, 사회의 일원으로서 그 영향력에 책임을 가지고 사회를 더욱 좋은 곳으로 만들어 나가야 할 의무가 있습니다. 반다이남코코리아는 아래와 같은 내용을 바탕으로, 전 세계 사람들의 미소로 이어질 수 있도록 CSR활동을 추진하고, 사회의 지속적인 발전에 기여하고 있습니다.
+                            </p>
+                            </div>
+                            </div>
+                            <div class="item">
+                                <ul>
+                                    <li>
+                            <dl>
+                                <dt><p>상품/서비스의 안전 및 위생</p></dt>
+                                <dd>제품을 생산할 때 “안전성”을 중요하게 여기며, 독자적 으로 정한 엄격한 품질 기준과 철저한 공장, 감사 등을 통해 누구나 안전하고 즐겁게 놀 수 있는 상품 만들기에 임하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>콘텐츠 / 상품의 표현에 있어
+                                    사회적 영향 고려</p></dt>
+                                <dd>전 세계 사람들에게 꿈, 놀이, 감동을 제공하기 위해, 표현의 자유를 존중하면서도 다양한 상품과 서비스를 고객에게 적절하게 제공하기 위해 노력하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>환경보호</p></dt>
+                                <dd>환경을 보호하기 위해, 3R (Reduce / Reuse / Recycle) 활동을 진행하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>공급망 관리</p></dt>
+                                <dd>우리가 제공하는 꿈, 놀이, 감동의 질적 향상을 위해 기획, 제작 및 소재 선택, 생산, 유통 등 제품과 서비스에 관련된 여러 단계의 질적 향상에 노력하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>유니버셜 디자인 추진</p></dt>
+                                <dd>더 많은 사람이 즐겁고 안전하게, 제품이나 서비스를 이용할 수 있도록 유니버설 디자인(UD) 개념을 도입하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>고객지원 만족도 향상</p></dt>
+                                <dd>고객의 목소리에 원활하게 대응하기 위해, 개인정보 분리 후 직원에게 공유하고 있습니다. 제품의 개선 및 상품 개발에 고객의 의견을 반영하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>법령 준수</p></dt>
+                                <dd>고객이 안심하고 꿈, 놀이, 감동을 즐길 수 있도록 법률을 준수하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            <li>
+                            <dl>
+                                <dt><p>사회 공헌</p></dt>
+                                <dd>병원 방문 행사나 문화 체험 행사 등, 장난감을 만드는 기업이기에 가능한 사회 공헌 활동에 적극적으로 임하고 있습니다.</dd>
+                            </dl>
+                            </li>
+                            </ul>
+                            </div>
+                </div>
+                </div>
+            </div>
+            <!--Organization-->
+            <div id="section5">
+                <div class="container">
+                    <p class="title">ORGANIZATION</p>
+                    <p class="info">We are No.1 Entertainment Provider</p>
+                    <div class="pic">
+                    <img class="org" src="images/organization.png">
+                    </div>
+            </div>   
+        </section>
+        <footer id="footer">
+            <div class="container">
+				<div class="copyright">
+					@BANDAI NAMCO KOREA CO.,LTD. ALLRIGHTS RESERVED.
+				</div>
+				<div class="link">
+					<div class="sns">
+						<a href="#"><img src="images/facebook.gif" alt="페이스북"></a>
+						<a href="#"><img src="images/youtube.gif" alt="유투브"></a>
+						<a href="#"><img src="images/instargram.gif" alt="인스타그램"></a>
+					</div>
+					<div class="familly">
+						<label for="site" class="skip"></label>
+						<select id="site" title="패밀리사이트">
+							<option title="패밀리사이트" value="">패밀리사이트</option>
+							<option title="사이트1" value="">사이트1</option>
+							<option title="사이트2" value="">사이트2</option>
+						</select>
+						<!--
+						<p><input type="checkbox"> 동의합니다.</p>
+						<p>
+							<input type="checkbox" id="apply" name="allpy"> <label for="apply">동의합니다.</label>
+						</p>
+						<p>
+						<select>
+							<option>패밀리사이트</select>
+						</select>
+						</p>
+						-->
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
