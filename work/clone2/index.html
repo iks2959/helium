@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이룸청년센터</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+	<link rel="stylesheet" type="text/css" href="css/layout_new.css"/>
+	<link rel="stylesheet" type="text/css" href="css/main_new.css"/>
+	<script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<style>
+		*{margin:0; padding:0; list-style:none; box-sizing:border-box; text-decoration:none;}
+		.container{position:relative; width:1400px; margin:0 auto;}
+		header{height:98px;}
+		header h1{position:absolute; top:20px; left:0;}
+
+		#quick{background:#f2f4f7;}
+		#quick{position:relative; width:1400px; height:110px; margin:0 auto;}
+		#quick ul li{float:left; width:20%; height:83px; margin-top:14px; line-height:83px; border-right:1px solid #d9dbde;}
+		#quick ul .quick5{border:0;}
+		#quick ul li a{display:block; transition:all 0.4s ease;}
+		#quick ul li a:hover{color:#000; transform:translateX(-10px); transition:all 0.4s ease;}
+		#quick ul li a:after{}
+
+		#quick ul .quick1 a{padding-left:125px; background: url(images/quick_1.gif) no-repeat 53px 0px;}
+		#quick ul .quick2 a{padding-left:145px; background: url(images/quick_2.gif) no-repeat 65px 0px;}
+		#quick ul .quick3 a{padding-left:145px; background: url(images/quick_3.gif) no-repeat 63px 0px;}
+		#quick ul .quick4 a{padding-left:125px; background: url(images/quick_4.gif) no-repeat 53px 0px;}
+		#quick ul .quick5 a{padding-left:145px; background: url(images/quick_5.gif) no-repeat 66px 0px;}
+        
+		#box{position:relative; overflow:hidden; width:100%;}
+		#box .container{overflow:hidden; padding:70px 0 60px 0;}
+		#box .board h2{float:left; padding:46px 30px 58px 30px;}
+		#box .board p{position:absolute; top:0; right:0;}
+		.board{float:left; width:590px; height:370px; padding:43px 30px; border:1px solid #e6e8eb;}
+		.board h1{float:left; font-size:135%; color:#0e62b2;}
+		.board .inner{position:relative;}
+		.board ul{clear:both; padding-top:30px; background:url(images/img_bg_line.png) repeat-x 0 20px;}
+		.board{position:relative; float:left; width:590px; height:370px; padding 43px 30px;}
+		.board li{border-bottom:1px solid #ccc}
+		.board li a{display:inline-block; width:300px; padding:10px 0; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; transition:all 0.4s ease;}
+		.board li a:hover{color:#0e62b2; transform:translateX(5px);}
+		.board li:last-child{border:0;}
+		.board li span{float:right; padding:10px 0;}
+        .board p{position:absolute; margin-top:45px;; padding-right:30px;}
+		
+		.agenda{float:left; width:390px; height:370px; margin:0 15px 0 15px; padding:43px 30px; border:1px solid #e6e8eb;}
+		.agenda .inner{position:relative;}
+		.agenda h2{float:left; font-size:135%; color:#0e62b2;}
+		.agenda .more{position:absolute; top:0; right:0;}
+		.agenda .monthinfo{clear:both; position: relative; padding-top: 20px;}
+		.agenda .monthinfo ul li a{padding:5px; border:1px solid #ccc;}
+		.agenda .monthinfo ul li:first-child{position:absolute; left:0; top:23px;}
+		.agenda .monthinfo ul li:last-child{position:absolute; right:0; top:23px;}
+		.agenda .monthinfo .month{text-align:center; font-size:140%; font-weight:600;}
+		.agenda table{margin-top:20px;}
+
+		.agenda .title a{float:right;}
+		.agenda .title t1{float:left; font-size:135%;  color:#0e62b2;}
+		.agenda .info{clear:both; position:relative; height:40px;}
+		.agenda .info .prev{position:absolute; left:0; top:10px; border:1px solid #ccc;}
+		.agenda .info .next{position:absolute; right:0; top:10px; border:1px solid #ccc;}
+		.agenda .info .month{font-weight:600; font-size:24px; text-align: center;}
+		.agenda .calendar table{}
+		.agenda .calendar table th{border:1px solid #ccc; border-bottom:1px solid #ccc;} 
+		.agenda .calendar table th:first-child{color:red;}
+		.agenda .calendar table th:last-child{color:blue;}
+		.agenda .calendar table td{height:34px; text-align:center;}
+		.agenda .calendar table td{text-align: center; background:#ccc;}
+		.agenda .calendar table td span{display:inline-block; width:30px; background:#eaeaea;}
+		.agenda .calendar table td:first-child{color:red;}
+		.agenda .calendar table td:last-child{color:blue;}
+		.agenda .calendar table td .today{color:#fff; background:#000;}
+         
+		.jod{float:left; width:380px; }
+		.jod ul li{float:left; margin:0 8px 8px 0;}
+         
+		.active{width:100%; height:548px; background:#1d72c5;}
+		.active .active_box{position:relative; overflow: hidden; width:1400px; margin:0 auto; padding-top: 50px;}
+		.active .active_box .gallary{float:left; position:relative; width:965px;}
+		.active .active_box .gallary h2{color:#fff; margin-top:35px; font-size:22px;}
+		.active .active_box .gallary .inner{float:left; margin-top:35px;}
+		.active .active_box .gallary .inner dl{float:left; width:300px; margin: 10px; background: #fff;}
+		.active .active_box .gallary .inner dl:last-child{margin-top: 11px;}
+		.active .active_box .gallary .inner dl dd{padding:20px 15px; text-align: center;}
+		.active .active_box .gallary .inner dl .sbj{height: 60px; padding-bottom: 0px;}
+		.active .active_box .gallary .inner dl .sbj a{color:#333}
+		.active .active_box .gallary p{position:absolute; top:20px; right:32px;}
+        .active .active_box .gallary p a{padding-left: 15px; color:#fff;}
+		.active .gallary p {margin-top:20px; color:#fff;}
+
+		.active .active_box .vod{float:right; position:relative; width:400px;}
+		.active .active_box .vod h3{color:#fff; margin-top:35px; font-size:22px;}
+		.active .vod p a{float:right; color:#fff; margin-top:-53px;}
+		.active video{width:400px; height:360px; overflow:hidden; margin-left:35px; padding-bottom: 100px;} 
+			
+		
+	    footer{background: #333; height:243px; padding-top: 20px;  border-bottom:1px solid white; }
+		#copyright{color:white; padding:30px 0px;}
+		footer .container ul li a{color:white; float:left; padding:20px; border:1px solid #b4bcc0; border-radius: 5px; padding:5px 10px; margin:5px;}
+		footer .container p{clear:both; padding-top:20px; color:white; padding-bottom:40px; }
+		footer .container p span{color:#777771;}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<header id="header">
+			<span class="mask"></span>
+			<div class="inr">
+				<h1><a href="index.html"><img src="images/logo.gif"></a></h1>
+				<div class="navigation">
+					<!-- gnb -->
+					<nav>
+						<ul class="gnb">
+							<li>
+								<a href="center_1" class="center"><span>청년센터</span></a>
+								<ul class="submenu">
+									<li><a href="center_1" class="center_sub01"><span>청년센터소개</span></a></li>
+									<li><a href="center_2" class="center_sub02"><span>프로그램안내</span></a></li>
+									<li><a href="center_5" class="center_sub02"><span>보유도서목록</span></a></li>
+									<li><a href="center_3" class="center_sub03"><span>공간안내</span></a></li>
+									<li><a href="center_4" class="center_sub04"><span>오시는길</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="policy_1" class="policy"><span>청년정책</span></a>
+								<ul class="submenu">
+									<li><a href="policy_list?bbs=pnews" class="policy_sub01"><span>정책소식</span></a></li>
+									<li><a href="policy_1" class="policy_sub01"><span>분야별 청년정책</span></a></li>
+									<li><a href="policy_2" class="policy_sub02"><span>청년네트워크 소개</span></a></li>
+									<li><a href="policy_4" class="policy_sub03"><span>청년주요활동</span></a></li>
+									<!--li><a href="policy_list?bbs=qna" class="policy_sub04"><span>청년정책 문의</span></a></li-->
+									<li><a href="policy_5" class="policy_sub05"><span>청년정책 검색</span></a></li>
+									<li><a href="policy_list?bbs=archive" class="policy_sub06"><span>아카이브</span></a></li>
+									<li><a href="policy_7" class="policy_sub01"><span>청춘다락</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="job_1" class="job"><span>청년일자리</span></a>
+								<ul class="submenu">
+									<li><a href="job_1" class="board_job01"><span>일자리정책</span></a></li>
+									<li><a href="job_2_new" class="board_job02"><span>구인 및 구직 등록</span></a></li>
+									<li><a href="job_3" class="board_job03"><span>채용정보</span></a></li>
+									<!--li><a href="job_5" class="board_job05"><span>인재정보</span></a></li-->
+									<li><a href="jbbs_list?bbs=edu" class="board_job04"><span>교육훈련</span></a></li>
+									<li><a href="jbbs_list?bbs=startup" class="board_job06"><span>창업정보</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="biz2_list" class="business"><span>사업소개</span></a>
+								<ul class="submenu">
+									<!--li><a href="biz_1" class="business_sub01"><span>사업소개</span></a></li-->
+									<li><a href="biz2_list" class="board_business02"><span>사업안내</span></a></li>
+									<li><a href="biz_3" class="board_business03"><span>사업일정표</span></a></li>
+									<!--li><a href="biz4_list" class="board_business04"><span>사업일지</span></a></li-->
+								</ul>
+							</li>
+							<li>
+								<a href="room_2" class="room"><span>공간예약</span></a>
+								<ul class="submenu">
+									<!--li><a href="room_1" class="board_room01"><span>공간안내</span></a></li-->
+									<li><a href="room_2" class="board_room02"><span>공간신청</span></a></li>
+									<li><a href="room_3" class="board_room03"><span>공간신청 현황</span></a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="bbs_list?bbs=gongji" class="community"><span>커뮤니티</span></a>
+								<ul class="submenu">
+									<li><a href="bbs_list?bbs=gongji" class="board_community01"><span>이룸소식</span></a></li>
+									<li><a href="bbs_list?bbs=free" class="board_community02"><span>자유게시판</span></a></li>
+									<li><a href="photo_list?bbs=gall" class="board_community03"><span>활동갤러리</span></a></li>
+									<li><a href="bbs_list?bbs=news" class="board_community04"><span>청년뉴스</span></a></li>
+									<li><a href="vod_list?bbs=vod" class="board_community05"><span>동영상자료</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</nav>
+					<!-- util-->
+					<div class="area_util">
+						<div class="util">
+														<a href="login" class="util_item util_signup">
+								<span>로그인</span>
+							</a>
+							<a href="register" class="util_item util_signup">
+								<span>회원가입</span>
+							</a>
+													</div>
+						<div class="util">
+							<a href="#" class="util_item all_menu_btn">
+								<span class="menu_toggle_btn txt_none">
+									<span class="menu_btn v2">전체메뉴</span>
+								</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- //header -->
+		<!--
+		<header class="container">
+			<h1><img src="images/logo.jpg"></h1>
+			<ul class="menu">
+				<li><a href="#">청년센터</a></li>
+				<li><a href="#">청년정책</a></li>
+				<li><a href="#">청년일자리</a></li>
+				<li><a href="#">사업소개</a></li>
+				<li><a href="#">공간예약</a></li>
+				<li><a href="#">커뮤니티</a></li>
+			</ul>
+			<ul class="util">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">회원가입</a></li>
+			</ul>
+		</header>
+		-->
+		<!-- visual -->
+		<div class="area_visual">
+			<ul>
+				<li style="background-image:url(images/bannerm_1_20200915_0.jpg);">
+					<i style="background-image:url('/upload/banner/bannerm_1_20200915_0.jpg');"></i>
+				</li>
+				<li style="background-image:url(images/banner_2_20200915_0.jpg);">
+					<i style="background-image:url('/upload/banner/bannerm_2_20200915_0.jpg');"></i>
+				</li>
+				<li style="background-image:url(images/banner_4_20200915_0.jpg);cursor:pointer;" onClick="go_url('/web/room_2');">
+					<i style="background-image:url('/upload/banner/bannerm_4_20200915_0.jpg');" onClick="go_url('/web/room_2');"></i>
+				</li>
+			</ul>
+		</div>
+		<!-- //visual -->
+		<div id="quick">
+			<div class="container">
+				<ul>
+				<li class="quick1"><a href="#">청년정책검색</a></li>
+				<li class="quick2"><a href="#">청년 뉴스</a></li>
+				<li class="quick3"><a href="#">공간 예약</a></li>
+				<li class="quick4"><a href="#">희망도서신청</a></li>
+				<li class="quick5"><a href="#">오시는 길</a></li>
+				</ul>
+			</ul>
+		</div>
+		</div>
+	</div>
+	<div id="box">
+		<div class="container">
+			<div class="board">
+				<h1>공지사항</h1>
+				<ul>
+					<li><a href="#">11월 인문학특강 [사진, 한번 찍어볼까요?]</a><span>2021.11.01</span></li>
+					<li><a href="#">11월 퍼스널컬러 특강 ♥</a> <span>2021.10.27</span></li>
+					<li><a href="#">11월 취창업 특강 [NCS 자기소개서]</a><span>2021.10.26</span></li>
+					<li><a href="#">10월 인문학 특강 [벼락부자]</a><span>2021.10.20</span></li>
+				</ul>
+				<p><a href="#">+ 전체보기</a></p>
+			</div>	
+			<div class="agenda">
+				<div class="title">
+					<h2>센터일정</h2>
+					<a href="#">+전체보기</a>
+				</div>
+				<div class="info">
+					<span class="prev"><a href="#">이전달</a></span>
+					<p class="month">2021.11</p>
+					<span class="next"><a href="#">다음달</a></span>
+				</div>	
+				<div class="calendar">
+					<table>
+						<caption>달력</caption>
+						<thead>
+							<tr>
+								<th>일</th>
+								<th>월</th>
+								<th>화</th>
+								<th>수</th>
+								<th>목</th>
+								<th>금</th>
+								<th>토</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span>1</span></td>
+								<td><span>2</span></td>
+								<td><span>3</span></td>
+								<td><span>4</span></td>
+								<td><span>5</span></td>
+								<td><span>6</span></td>
+								<td><span>7</span></td>
+							</tr>
+							<tr>
+								<td><span>8</span></td>
+								<td><span>9</span></td>
+								<td><span>10</span></td>
+								<td><span>11</span></td>
+								<td><span>12</span></td>
+								<td><span>13</span></td>
+								<td><span>14</span></td>
+							</tr>
+							<tr>
+								<td><span>15</span></td>
+								<td><span>16</span></td>
+								<td><span>17</span></td>
+								<td><span class="today">18</span></td>
+								<td><span>19</span></td>
+								<td><span>20</span></td>
+								<td><span>21</span></td>
+							</tr>
+							<tr>
+								<td><span>22</span></td>
+								<td><span>23</span></td>
+								<td><span>24</span></td>
+								<td><span>25</span></td>
+								<td><span>26</span></td>
+								<td><span>27</span></td>
+								<td><span>28</span></td>
+							</tr>
+							<tr>
+								<td><span>29</span></td>
+								<td><span>30</span></td>
+								<td><span>31</span></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="jod">
+				<ul>
+					<li><a href="#"><img src="images/b_1.gif" alt="구인등록"></a></li>
+					<li><a href="#"><img src="images/b_2.gif" alt="구직등록"></a></li>
+					<li><a href="#"><img src="images/b_3.gif" alt="채용정보"></a></li>
+					<li><a href="#"><img src="images/b_4.gif" alt="인재정보"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="active">
+		<div class="active_box">
+			<div class="gallary">
+				<h2>활동 갤러리</h2>
+				 <div class="inner">
+					 <dl>
+						 <dt>
+							 <a href="#"><img src="images/gallary01.jpg"  alt="9월 문화특강 나만의 디퓨저 만들기"></a>
+						 </dt>
+						 <dd class="sbj">
+							<a href="#">9월 문화특강 나만의 디퓨저 만들기</a>
+						</dd>
+						<dd>
+						   2021-09-29
+						</dd>
+					 </dl>
+					 <dl>
+						<Dt>
+							<a href="#"><img src="images/gallary02.jpg" alt="9월 취창업 특강"></a>
+						</Dt>
+						<dd class="sbj">
+							<a href="#">9월 취창업 특강</a>
+						</dd>
+						<dd>
+						   2021-09-06
+						</dd>
+					</dl>
+					<dl>
+						<Dt>
+							<a href="#"><img src="images/gallary03.jpg" alt="8월 문화특강 [그릇 만들기-세라믹 페인팅]"></a>
+						</Dt>
+						<dd class="sbj">
+							<a href="#">8월 문화특강 [그릇 만들기-세라믹 페인팅]</a>
+						</dd>
+						<dd>
+						   2021-08-26
+						</dd>
+					</dl>
+					</div>
+					<p><a href="#">+전체보기</a></p>
+				</div>
+				<div class="vod">
+					<h3>동영상 갤러리</h3>
+					<p><a href="#">+전체보기</a></p>
+				</div>
+                <video poster="images/pdata_file_4.jpg"
+				       width="400" height="330" controls="controls">
+					   <source src="vod/vdata_file_4.mp4" type="video/mp4">
+					</video>    
+				 </div>
+				 <div class="banner">
+					 <div class="banner_area">
+						<div class="inr03">
+							<h2>배너모음</h2>
+							<ul class="list">
+								<li><a href="http://www.geoje.go.kr" target="_blank" title="거제시청"><img src="images/banner1.gif" alt="거제시청 로고"></a></li>
+								<li><a href="https://www.workplus.go.kr" target="_blank" title="고용복지+센터"><img src="images/banner2.gif" alt="고용복지+센터 로고"></a></li>
+								<li><a href="http://www.geojesh.or.kr" target="_blank" title="조선업희망센터"><img src="images/banner3.gif" alt="조선업희망센터 로고"></a></li>
+								<li><a href="https://www.work.go.kr" target="_blank" title="워크넷"><img src="images/banner4.gif" alt="워크넷 로고"></a></li>
+								<li><a href="https://www.youthcenter.go.kr" target="_blank" title="온라인청년센터"><img src="images/banner5.gif" alt="온라인청년센터 로고"></a></li>
+								<li><a href="http://www.youthonna.com" target="_blank" title="청년온나"><img src="images/banner6.gif" alt="청년온나 로고"></a></li>
+								<li><a href="http://gnfriends.kr" target="_blank" title="청년일자리프렌즈"><img src="images/banner7.gif" alt="청년일자리프렌즈 로고"></a></li>
+								<li><a href="http://gnjobs.kr" target="_blank" title="경남지역주도형청년일자리사업"><img src="images/img_banner08.gif" alt="경남지역주도형청년일자리사업 로고"></a></li>
+								<li><a href="https://ccei.creativekorea.or.kr/gyeongnam/" target="_blank" title="경남창조경제혁신센터"><img src="images/img_banner09.gif" alt="경남창조경제혁신센터 로고"></a></li>
+							</ul>
+						</div>
+					</div>
+	<footer>
+		<div class="container">
+			<ul>
+				<li><a href="#">개인정보처리방침</a></li>
+				<li><a href="#">이용약관</a></li>
+				<li><a href="#">이메일무단수집거부</a></li>
+			</ul>
+			<p>
+				거제청년센터 <span>이용시간평일</span> 9시-18시 (토요일/일요일/공휴일 휴무)<br>
+				<span>주소</span> 경남 거제시 계룡로11길 21 1층 거제청년센터 이룸 (지번주소: 경남 거제시 고현동 552)
+			</p>
+			</div>
+			<div id="copyright">
+			<div class="container">
+				Copyright © 거제청년센터이룸. All right reserved.
+			</div>
+		</footer>
+	       </div> 
+		   </div>
+		   </div>
+		   </body>
+		   </html>
+		   
+</body>
+</html>
