@@ -1,0 +1,766 @@
+/*# sourceURL=/css/kr/main.css */
+/*@ sourceURL=/css/kr/main.css */
+/** top_popup **/
+
+.top_pop {position: relative;text-align: center;box-sizing: border-box;z-index: 1; background-color:#4fa8fa;}
+.top_pop >.inr{position:relative; width:100%; overflow:hidden; max-width:1220px; margin:0 auto; text-align:center;}
+.top_pop >.inr img{display:block; width:100%; height:100%;}
+.top_pop .tpop_close {position:absolute;right: 0;bottom:5px;background:rgba(0,0,0,0.5);overflow:hidden;padding: 3px 15px;}
+.top_pop .tpop_close label {font-size:12px; color:#fff; }
+.top_pop .tpop_close .btn_close_svc{display:inline-block;overflow:hidden;background: none;width: 11px;height: 10px;vertical-align: middle;margin-left: 10px;}
+.top_pop .tpop_close .btn_close_svc .sprh_com{background-position: -102px -72px;width: 100%;height: 100%;}
+
+#headerwrap{position:relative;}
+
+/* common */
+.fll {float: left;}
+.fll:after {content:""; display: block; clear: both;}
+.flr {float: right;}
+.flr:after {content:""; display: block; clear: both;}
+.dib {display: inline-block;}
+.db {display: block;}
+.eng {letter-spacing:0px;}
+.yellow {color:#f5ffa4;}
+.bluebold {color:#1e3ba8; font-weight: 800;}
+
+
+.mtit {font-size: 24px; line-height:130%; font-weight: 800;}
+.maintit {line-height:130%; margin-bottom: 10px;}
+.maintit.is-1 {font-size: 22px;}
+.maintit.is-2 {font-size: 20px;}
+.maintit.is-3 {font-size: 18px;}
+.titdesc {display: inline-block; font-size: 15px; color:#e7e7e7;}
+
+/* main */
+#container {position: relative;}
+
+.main-top {position: relative; width: 1200px; margin: 0 auto;}
+.main-top .top-container {position: absolute; z-index:10; left: 50px; top: 15px; text-align: center;}
+.main-top .top-container img {vertical-align: top; margin-top: 20px;}
+.main-top .mainarrow {position: absolute; top: 60px; display: block; width: 21px; height: 35px; z-index:10;}
+.main-top .mainprev {right: 372px; background: url("http://council.gb.go.kr/images/kr/main/mainbtn_left.png") no-repeat center;}
+.main-top .mainnext {right:0; background: url("http://council.gb.go.kr/images/kr/main/mainbtn_right.png") no-repeat center;}
+
+.maincon-wrap {padding-top: 10px; width: 1200px; margin: 0 auto; height: 886px; text-align: right;}
+.maincon-wrap:after {content:""; display: block; clear: both;}
+.maincon-wrap .maincon-sec {display: inline-block;}
+.maincon-wrap .maincon-sec .maincon-btn {position: relative; margin-top: 20px; display: inline-block; width: 99px; height: 100px; margin-left: 10px; text-align: center; font-size: 16px; color:#fff; z-index:10;}
+.maincon-wrap .maincon-sec .maincon-btn span {display: inline-block; vertical-align: middle; line-height:150%;}
+.maincon-wrap .maincon-sec .maincon-btn:before {content:""; display: block; width: 44px; height: 38px; margin: 17px auto 6px; background-repeat:no-repeat; background-positoin:center;}
+
+.maincon-wrap .maincon-sec .maincon-box {display: none; position: absolute; top: 0; left: 0;  width: 100%; height: 100%; text-align: left;}
+.maincon-wrap .maincon-sec .maincon-box .conbox {width: 1200px; margin: 156px auto 0; height: 705px;}
+.maincon-wrap .maincon-sec .maincon-box .conbox:after,
+.maincon-wrap .maincon-sec .maincon-box .container:after {content:""; display: block; clear: both;}
+.maincon-wrap .maincon-sec .maincon-box.active {display: block;}
+
+/* deatil css */
+.maincon-wrap .maincon-sec.sec1 .maincon-btn {background: url("http://council.gb.go.kr/images/kr/main/btn_sec_1_bg.png") no-repeat 0 0;} 
+.maincon-wrap .maincon-sec.sec2 .maincon-btn {background: url("http://council.gb.go.kr/images/kr/main/btn_sec_2_bg.png") no-repeat 0 0;} 
+.maincon-wrap .maincon-sec.sec3 .maincon-btn {margin-right: 35px; background: url("http://council.gb.go.kr/images/kr/main/btn_sec_3_bg.png") no-repeat 0 0;} 
+.maincon-wrap .maincon-sec .maincon-btn.active, .maincon-wrap .maincon-sec .maincon-btn:hover {background-position:0 -100px;}
+/*
+.maincon-wrap .maincon-sec .maincon-btn.active {
+	background-position:0 -100px;
+ -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+*/
+.maincon-wrap .maincon-sec.sec1 .maincon-btn:before {background-image: url("http://council.gb.go.kr/images/kr/main/btn_sec1.png");}
+.maincon-wrap .maincon-sec.sec2 .maincon-btn:before {background-image: url("http://council.gb.go.kr/images/kr/main/btn_sec2.png");}
+.maincon-wrap .maincon-sec.sec3 .maincon-btn:before {background-image: url("http://council.gb.go.kr/images/kr/main/btn_sec3.png");}
+
+.maincon-wrap .maincon-sec.sec1 .maincon-box {background: url("http://council.gb.go.kr/images/kr/main/sec_bg_1.png") no-repeat center;}
+.maincon-wrap .maincon-sec.sec2 .maincon-box {background: url("http://council.gb.go.kr/images/kr/main/sec_bg_2.png") no-repeat center;}
+.maincon-wrap .maincon-sec.sec3 .maincon-box {background: url("http://council.gb.go.kr/images/kr/main/sec_bg_3.png") no-repeat center;}
+
+/* 
+ * mainbox       68.5%   422
+ * introwrap     30%     422
+ * popupwrap     26.8    265
+ * noticewrap    43.7    265
+ * gowrap        30%     265
+ */
+.mainbox {width: 68.5%; height: 422px; overflow: hidden;}
+.mainbox .visual {overflow: hidden; position: relative; width: 100%; height: 362px;}
+.mainbox .visual .visualimg {position: relative; width: 100%; height: 100%;}
+.mainbox .visual .bx-controls{z-index:55; position:absolute; top:20px; left:65px;}
+.mainbox .visual .bx-controls *{display:inline-block; vertical-align:top;}
+.mainbox .visual .bx-controls a{width:16px; height:16px; margin-right:2px; border-radius:50%; font-size:0; text-indent:-999px; background:#c2c2c2;}
+.mainbox .visual .bx-controls a.active{background:#0258bc;}
+
+.mainbox .visual .btnwrap {z-index:55; position: absolute; top: 20px; left: 20px; font-size: 0;}
+.mainbox .visual .btnwrap .circle {display: inline-block; width: 16px; height: 16px; margin-right: 2px; border:1px solid #9b9ea3; border-radius:50%;transition:background-color 0.1s;}
+.mainbox .visual .btnwrap .play {background:#fff url("http://council.gb.go.kr/images/common/ctrl_btn.png") 0 0;}
+.mainbox .visual .btnwrap .pause {background:#fff url("http://council.gb.go.kr/images/common/ctrl_btn.png") -16px 0;}
+.mainbox .visual .btnwrap .vctrl:hover {background-color: #333; background-position-y: -16px; border-color:#333;}
+.mainbox .visual .btnwrap .btnlist {display: inline-block;}
+.mainbox .visual .btnwrap .btnlist .indices {position: relative; background-color: #c2c2c2; border-color:#c2c2c2; margin-left: 7px;} 
+.mainbox .visual .btnwrap .btnlist .indices.on,
+.mainbox .visual .btnwrap .btnlist .indices:hover {background-color: #0258bc; border-color:#0258bc;}
+.mainbox .today {position: relative; padding:0 20px; height: 60px; line-height:58px; background: #527eb8;}
+.mainbox .today .today-con {display: inline-block; vertical-align: middle; line-height:150%;}
+.mainbox .today .today-con .block {display: inline-block; margin: 0 20px; overflow: hidden; width: 310px; vertical-align: middle;}
+.mainbox .today .today-con .block #moveUpFn {height: 23px; overflow: hidden;}
+.mainbox .today .today-con .block #moveUpFn a {color:#fff; font-size: 17px;}
+.mainbox .today .today-con .today-tit {display: inline-block; font-size: 19px; color:#fff; vertical-align: middle;}
+.mainbox .today .today-con .today-tit a > span { color: #fff; }
+.mainbox .today .today-con .today-tit span {vertical-align: middle;}
+.mainbox .today .today-con .today-tit a > span.day {display: inline-block; margin-left: 10px; font-size: 36px; line-height:100%; color: #f9ff4c;}
+.mainbox .today .golink {display: inline-block; width: 70px; height: 30px; line-height:30px; font-size: 14px; text-align: center; border:1px solid #bacbe3; color:#fff;}
+.mainbox .today .golink:hover {background: #345f97;}
+.morebtn-ico {position: absolute; top: 0; right: 0; display: block; width: 30px; height: 30px; background: url("http://council.gb.go.kr/images/kr/main/golink.png") no-repeat center;}
+.morebtn-ico:hover {background-color: #345f97;}
+
+ 
+.introwrap {width: 30%; height: 422px; overflow: hidden;}
+
+/*의장실 배경 회색
+.introwrap .chairman {overflow: hidden; position: relative; width: 100%; height: 246px; padding: 20px; box-sizing: border-box; background: rgba(0,0,0,.18);}
+.introwrap .chairman * {color:#fff;}
+.introwrap .chairman .maintit {position: relative; z-index:5; margin:32px 0;}
+.introwrap .chairman .grade {margin-top: 7px;}
+.introwrap .chairman .name {color:#f1ff4f;}
+.introwrap .chairman .btnline {font-size: 15px;}
+의장실 배경 회색*/
+
+/*의장실배경*/
+.introwrap .chairman {overflow: hidden; position:relative; width: 100%; height: 246px; 
+background: url("http://council.gb.go.kr/images/kr/main/bg_chair.jpg") left bottom no-repeat;}
+.introwrap .chairman a{display:block; width:100%; height:100%; padding:20px; box-sizing:border-box;}
+.introwrap .chairman * {color:#115e6d;}
+.introwrap .chairman .btnline{display:inline-block; padding:6px 17px; border:1px solid #2ea1b7; font-size:15px;}
+.introwrap .chairman .maintit {display:block; position:relative; z-index:5; margin:32px 0;}
+.introwrap .chairman .grade {margin-top: 7px;}
+.introwrap .chairman .name {color:#b55c14;}
+/*의장실배경*/
+
+.introwrap .chairman .morebtn {position: absolute; bottom: 10px; left: 10px;display: block; width: 98px; height: 98px; line-height:98px;background: #d09b50; border-style:solid; border-width:10px; border-color:#f5e9c9; text-align: center; border-radius:50%; z-index:1;transition:border-color 0.3s;}
+.introwrap .chairman .morebtn span {display: inline-block; line-height:130%; vertical-align: middle; color:#fff; text-align: left; font-size: 14px;}
+.introwrap .chairman .morebtn span:after {display: block; content:""; width: 100%; height: 10px; margin-top: 5px; background: url("http://council.gb.go.kr/images/kr/main/chairman_more.png") no-repeat center;}
+.introwrap .chairman .morebtn:hover {border-color:#e9d0a2;}
+.introwrap .chairman .chairmain_pic {position: absolute; bottom: 0; right: 0px;}
+.introwrap .onair {position: relative; width: 100%; height: 176px; padding: 20px; box-sizing: border-box; background: #5367c6;}
+.introwrap .onair .maintit {margin:0; padding:4px 0 13px 40px; color:#fff; background:url("http://council.gb.go.kr/images/kr/main/ico_agenda.gif") no-repeat 3px 0; font-weight:700;}
+.introwrap .onair .maintit > a > span.dib {color:#fff;}
+.introwrap .onair .maintit > a > span.eng {color:#f9ff4c; margin-left: 7px; font-size:22px; letter-spacing:-1px;}
+.introwrap .onair .morebtn-ico {top: 10px; right: 10px; width: 22px; height: 22px; border:1px solid #fff;}
+.introwrap .onair .morebtn-ico:hover {background-color: #4959a4;}
+.introwrap .onair .moveUpFn {height: 23px; padding:10px; background: #fff;}
+.introwrap .onair .moveUpFn .block {height: 100%; line-height:23px; overflow: hidden;}
+.introwrap .onair .onair-quick {margin-top: 10px; overflow: hidden;}
+.introwrap .onair .onair-quick li {position: relative; float: left; width: 33.33%;}
+.introwrap .onair .onair-quick li > a {position: relative; display: inline-block; width: 100%; height: 46px; line-height:46px; color:#fff; font-size:17px; text-align: center; vertical-align: middle; background: #69a6d6;}
+.introwrap .onair .onair-quick li:before{position: absolute; right: 100%; top: 50%; margin-top: -8.5px; content:""; display: block; width: 1px; height: 17px; background: #9dc5e4;}
+.introwrap .onair .onair-quick li:first-child:before{display: none;}
+.introwrap .onair .onair-quick li a:after{position: absolute; top: 0; left: 0; content:""; display: block; width: 0; height: 5px; background: #394ba1; transition:width 0.3s;}
+.introwrap .onair .onair-quick li a:hover:after,
+.introwrap .onair .onair-quick li a:focus:after,
+.introwrap .onair .onair-quick li a:active:after{width:100%;}
+
+.popupwrap {position: relative; width: 27.4%; margin: 1.5% 1.5% 0 0; height: 215px; padding-bottom: 50px; background: #fff;}
+.popupwrap .popup{position:relative;}
+.popupwrap .popup li{position:absolute; top:0; left:0; text-align:center;}
+.popupwrap .bx-pager{z-index:56; position:absolute; bottom:14px; left:13px; color:#fff;}
+.popupwrap .popup-img {z-index:55; position: absolute; right: 0; left: 0;}
+/*.popupwrap .popwrap {overflow: hidden; width: 100%; height: 100%;}
+.popupwrap .popwrap .popup {width: 1000%; height: 100%;}
+.popupwrap .popup .pop {float: left; width: 10%; height: 100%;}
+.popupwrap .popup .pop > a {display: block; width: 100%; width: 100%; text-align: center;}
+.popupwrap .popup .pop > a img {display: inline-block; vertical-align: middle; max-width:100%;}
+.popupwrap .popup .pop.nopopup {background: #f1f1f1 url("http://council.gb.go.kr/images/kr/main/noimg.png") no-repeat center; width: 10% !important;}*/
+.popupwrap .popfoot {position: absolute; bottom: 0; left: 0;width: 100%; height: 50px; line-height:50px; box-sizing: border-box; padding:0 20px; background: #2c3441;}
+.popupwrap .popfoot .poplist {display: inline-block; color:#fff;}
+.popupwrap .popfoot .popctrl{position: absolute; top: 50%; margin-top: -11.5px; right: 20px; font-size: 0; line-height:0;}
+.popupwrap .popfoot .popctrl a {display: inline-block; width: 23px; height: 23px; background-image: url("http://council.gb.go.kr/images/kr/main/ctrl_btn.png"); background-repeat:no-repeat;}
+.popupwrap .popfoot .popctrl a.prev {background-position:0 0;}
+.popupwrap .popfoot .popctrl a.pause {background-position:-43px 0;}
+.popupwrap .popfoot .popctrl a.pause.on{background-position:-66px 0;}
+.popupwrap .popfoot .popctrl a.next {background-position:-23px 0;}
+.popupwrap .popfoot .popctrl a:hover {background-color: #80858d;background-position-y:-23px;}
+
+.noticewrap {width: 39.6%; margin: 1.5% 0 0 0; height: 265px; padding:20px; box-sizing:border-box; background: #fff;}
+.noticewrap .notice {position: relative; width: 100%; height: 100%; }
+.noticewrap .notice > li {display: inline-block;}
+.noticewrap .notice .maintit {position: relative; display: inline-block; margin-bottom: 0; color:#313131;}
+.noticewrap .notice .maintit:after {display: none; position: absolute; bottom: 0; left: 0; content:""; width: 100%; height: 5px; background: #0194fe; z-index:1;}
+.noticewrap .notice .maintit > a {display: block; padding:5px 15px 15px; }
+.noticewrap .notice .noticebox {display: none; position: absolute; top: 41px; left: 0; width: 100%; border-top:1px solid #d4d4d4;}
+.noticewrap .notice .noticebox > li {position: relative; padding-right: 90px; margin-top:10px;}
+.noticewrap .notice .noticebox > li:first-child {margin-top: 20px;}
+.noticewrap .notice .noticebox > li .date {position: absolute; top: 0; right: 0; font-size: 13px; color:#828282;}
+.noticewrap .notice .morebtn-ico {display: none; width: 22px; height: 22px;border:1px solid #d4d4d4; background: url("http://council.gb.go.kr/images/kr/main/golink_2.png") no-repeat center;}
+.noticewrap .notice .morebtn-ico:hover {background-color: #eaeaea;}
+.noticewrap .notice .on .maintit {color:#333;}
+.noticewrap .notice .on .noticebox {display: block;}
+.noticewrap .notice .on .maintit:after {display: block;}
+.noticewrap .notice .on .morebtn-ico {display: block;}
+.noticewrap .notice .morebtn-ico .mtext {display: none;}
+
+.gowrap {width: 30%; height: 265px; margin: 1.5% 0 0 0;}
+.gowrap .maintit {display:block; margin-bottom: 20px; color:#fff;}
+.gowrap .golink {height: 50%; overflow: hidden;}
+.gowrap .golink a{display:block; height:100%; width:100%; padding: 25px; box-sizing:border-box;}
+.gowrap .go-1 a{background: #3ebb9c url("http://council.gb.go.kr/images/kr/main/gobg-1.png") no-repeat 80% bottom;}
+.gowrap .go-2 a{background: #2ea1b7 url("http://council.gb.go.kr/images/kr/main/gobg-2.png") no-repeat 80% bottom;}
+.gowrap .btnline {display:inline-block; padding:6px 17px; border:1px solid #fff; color:#fff; font-size:14px;}
+.gowrap .golink a:hover .btnline,
+.gowrap .golink a:focus .btnline{background-color:rgba(0,0,0,0.1);}
+
+/*
+ * member          50%   288
+ * member-search   50%   288
+ * member-map      50%   399
+ */
+ a.btnline{display:inline-block; border:1px solid #fff; color:#fff;}
+.member {position: relative; width: 50%; height: 288px; padding:38px 58px; box-sizing:border-box; background: #5f8ac4;}
+.member .maintit {color:#fff;}
+.member .maintit .titdesc {margin-left: 10px;}
+.member .mlist-wrap {margin-top: 15px; width: 100%; overflow: hidden;}
+.member .mlist {width: 2000px; height: 100%;}
+.member .mlist li {float: left; width: 113px; margin-right: 10px;}
+.member .mlist li > a {display: block; width: 100%; height: 100%;}
+.member .mlist li .thumb {width: 100%; height: 123px; text-align: center;}
+.member .mlist li .thumb img {height:100%;}
+.member .mlist li .name {display: block; margin-top: 14px; padding: 3px 0; color:#fff; text-align: center;}
+.member .movnmem {position: absolute; top: 50%; margin-top: -16px; display: block; width: 32px; height: 51px;}
+.member .next {right:10px; background: url("http://council.gb.go.kr/images/kr/main/mem-right.png") no-repeat center;}
+.member .prev {left: 10px; background: url("http://council.gb.go.kr/images/kr/main/mem-left.png") no-repeat center;}
+
+.member-search {width: 50%; height: 288px; padding:38px 58px; box-sizing:border-box; background-color: #e06352; background-image: url("http://council.gb.go.kr/images/kr/main/member-search-bg.png"); background-repeat: no-repeat; background-position: 50px bottom;}
+.member-search .maintit {color:#fff;} 
+.memform {margin-top: 13px; width: 250px;}
+.memform li {width: 100%;}
+.memform li + li {margin-top: 10px;}
+.memform .inpwrap {width: 100%;}
+.memform .inpwrap input {box-sizing:border-box;}
+.memform .sltwrap select {
+	width: 100%; height:41px; padding:0 43px 0 20px;background:#cea382 url("http://council.gb.go.kr/images/kr/main/select_bg.png") no-repeat right top;border-color:#ffffff; color:#fff;
+	-webkit-appearance: none; -moz-appearance: none;appearance: none;
+}
+select::-ms-expand{
+  display:none;
+}
+.memform .inpbtn {position: relative; padding-right: 59px; box-sizing:border-box;}
+.memform .inpbtn .lnginp {width: 100%; height:41px; background: #f6d1cb; border-color:#f6d1cb;}
+.memform .inpbtn .okbtn {position: absolute; top: 0; right: 0; width: 59px; height: 41px; background: #57554b; color:#fff; text-align: center;}
+
+
+.member-map {width: 100%; height: 416px; padding:23px 88px; box-sizing:border-box; background: #f3f3e0;}
+.maplist-wrap {width: 550px;}
+.maplist-wrap .titbox {padding: 25px 20px 20px 135px; background: url("http://council.gb.go.kr/images/kr/main/member-map-bg.png") no-repeat left top;}
+.maplist-wrap .mtit {margin-bottom: 20px;}
+.maplist-wrap .titdesc {color:#584e4e;}
+.maplist-wrap .titdesc br {display: none;}
+.maplist-wrap .mapname-list {margin-top: 17px; font-size: 0; border:1px solid #dcdcdc; border-width:1px 0 0 1px;}
+.maplist-wrap .mapname-list li {display: inline-block; width: 20%; font-size: 15px; vertical-align: top;}
+.maplist-wrap .mapname-list li .mapname {display: block; height: 40px; line-height:40px; background: #fff; text-align: center; box-sizing:border-box; border-color:#dcdcdc; border-style:solid; border-width:0 1px 1px 0;}
+.maplist-wrap .mapname-list li .mapname:hover {background: #2ca7da; color:#fff;}
+.maplist-wrap .mapname-list li .mapname.nodata:hover {background: #fff;}
+
+.mapimg-wrap {width: 320px; height: 334px; background: url("http://council.gb.go.kr/images/kr/main/mapimg.png") no-repeat center;}
+.mapimg-wrap ul {position: relative; width: 100%; height: 100%;}
+.mapimg-wrap li {position: absolute;font-size: 14px;}
+.mapimg-wrap li a{font-weight: 700;}
+.mapimg-wrap .m24 a {color:#fff;}
+.mapimg-wrap li a:hover,
+.mapimg-wrap li a.on {text-decoration:underline;  text-shadow:0 0 4px rgba(255,255,255,.8);}
+.mapimg-wrap .m1 {top:217px; left:190px;}
+.mapimg-wrap .m2 {top: 280px;left: 190px;}
+.mapimg-wrap .m3 {top: 225px; left: 26px;}
+.mapimg-wrap .m4 {top: 141px; left: 123px;}
+.mapimg-wrap .m5 {top: 212px; left: 64px;}
+.mapimg-wrap .m6 {top: 89px; left: 93px;}
+.mapimg-wrap .m7 {top: 243px; left: 150px;}
+.mapimg-wrap .m8 {top: 171px;left: 25px;}
+.mapimg-wrap .m9 {top: 120px; left: 33px;}
+.mapimg-wrap .m10 {top: 284px; left: 136px;}
+.mapimg-wrap .m11 {top: 222px; left: 108px;}
+.mapimg-wrap .m12 {top: 182px;left: 96px;}
+.mapimg-wrap .m13 {top: 179px; left: 170px;}
+.mapimg-wrap .m14 {top: 122px; left: 177px;}
+.mapimg-wrap .m15 {top: 157px;left: 197px;}
+.mapimg-wrap .m16 {bottom: 8px; left: 124px;}
+.mapimg-wrap .m17 {bottom: 22px; left: 56px;}
+.mapimg-wrap .m18 {bottom: 51px; left: 47px;}
+.mapimg-wrap .m19 {bottom: 68px; left: 81px;}
+.mapimg-wrap .m20 {top: 129px; left: 76px;}
+.mapimg-wrap .m21 {top: 80px; left: 142px;}
+.mapimg-wrap .m22 {top: 73px; left: 194px;}
+.mapimg-wrap .m23 {top: 33px;right: 21px;}
+.mapimg-wrap .m24 {top: 33px;left: 16px;}
+
+.maplist-wrap .mapname-list li .mapname.on {background: #2ca7da; color:#fff;}
+/*
+ * quickmenu  100%  180
+ * gallerywrap 100% 497
+ */
+.quickmenu {width: 100%; height: 180px; background: #6bb561;}
+.quickmenu .quick {padding:28px 10px;font-size: 0; text-align: center;}
+.quickmenu .quick li {display: inline-block; width: 11%;font-size: 16px;}
+.quickmenu .quick li a {display: inline-block; width: 100%;height: 100%; text-align: center; color:#fff;}
+.quickmenu .quick li span:before {display: block; content:""; margin: 0 auto 15px; width: 95px; height: 93px; background-color: #468956; background-repeat:no-repeat; background-position:center; border-radius:50%; transition:background 0.3s;}
+.quickmenu .quick li span{font-weight:700;}
+.quickmenu .quick .quick1 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_1.png");}
+.quickmenu .quick .quick2 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_2.png");}
+.quickmenu .quick .quick3 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_3.png");}
+.quickmenu .quick .quick4 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_4.png");}
+.quickmenu .quick .quick5 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_5.png");}
+.quickmenu .quick .quick6 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_6.png");}
+.quickmenu .quick .quick7 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_7.png");}
+.quickmenu .quick .quick8 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_8.png");}
+.quickmenu .quick .quick9 span:before {background-image: url("http://council.gb.go.kr/images/kr/main/quick_9.png");}
+.quickmenu .quick li:hover span:before {-webkit-animation-duration: 1s;animation-duration: 1s;-webkit-animation-fill-mode: both;animation-fill-mode: both;-webkit-animation-name: pulse;animation-name: pulse;}
+
+.gallerywrap {position: relative; width: 100%; height: 497px; padding: 37px 119px; box-sizing:border-box; background: url("http://council.gb.go.kr/images/kr/main/gall_bg.png") repeat left top; text-align: center;}
+.gallerywrap .galbtn {position: absolute; top: 50%; margin-top: -40.5px; width: 81px; height: 81px; background-repeat:no-repeat; background-image:url("http://council.gb.go.kr/images/kr/main/galbtn.png");}
+.gallerywrap .galprev {right: 100%; margin-right: 38px; background-position:0 0;}
+.gallerywrap .galnext {left: 100%; margin-left: 38px; background-position:-81px 0;}
+.gallerywrap .galbtn:hover {background-position-y:-81px;}
+
+.gallerywrap .mtit {margin-bottom: 30px; text-align: center; color:#fff; font-weight: 400;}
+.gallerywrap .btnline {padding:7px 28px; font-size: 16px;}
+.gallerywrap .btnline:hover{background: rgba(255,255,255,.14);}
+.gallwarp {width: 100%; overflow: hidden; margin-bottom: 20px;}
+.gallery {width: 201.5%;}
+.gallery > li {float: left; width: 16.1665%; margin:0 0.5% 0 0; text-align: left;}
+.gallery > li .thumb {width: 100%; height: 200px; overflow: hidden; text-align: center;}
+.gallery > li .thumb > a {position: relative; display: block; width: 100%; height: 100%;}
+.gallery > li .thumb img {position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%); min-width:100%; min-height:100%;}
+.gallery > li .desc {height: 106px; padding: 17px 19px; box-sizing:border-box; background: #fff;}
+.gallery > li .desc .galtit {overflow: hidden; white-space: normal; line-height: 1.4; height: 2.8em; text-align: left; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;font-size: 17px;}
+.gallery > li .desc .date {color: #828282; display: block; width: 100%; overflow: hidden; white-space: nowrap; word-wrap: normal; text-overflow: ellipsis; box-sizing:border-box;}
+
+#container-foot {width: 100%;}
+.main-foot {position: relative; width: 1200px; height: 90px; padding:20px 0; box-sizing:border-box; padding-left: 140px; margin: 0 auto;}
+.main-foot .banner-tit {position: absolute; left: 0; top: 50%; transform:translate(0,-50%); width: 117px; background:url("http://council.gb.go.kr/images/kr/main/banner_arrow.png") no-repeat right center;}
+.main-foot .banner-tit .maintit {font-weight: 700;}
+.main-foot .morebtn-ico {display: block; width: 22px; height: 22px; background: url("http://council.gb.go.kr/images/kr/main/golink_2.png") no-repeat center;}
+.main-foot .morebtn-ico:hover {background-color: rgba(0,0,0,.1);}
+.ctrl {font-size: 0; line-height:0;}
+.ctrl a {display: inline-block; width: 20px; height: 20px; background-image: url("http://council.gb.go.kr/images/kr/main/ctrl_pop.png"); background-repeat:no-repeat;}
+.ctrl a + a {margin-left: 4px;}
+.ctrl a.prev {background-position:0 0px;}
+.ctrl a.pause {background-position:-23px 0;}
+.ctrl a.next {background-position:-46px 0;}
+.ctrl a:hover {background-color: #f1f1f1;}
+.main-foot .banner-roll {overflow: hidden; height: 100%; width: 100%; padding-left: 10px; box-sizing:border-box;}
+.main-foot .banner-roll .banner {width: 1000%; height: 100%;}
+.main-foot .banner-roll .banner li {display: inline-block; width: 160px; padding:0 23px; height: 100%;  }
+.main-foot .banner-roll .banner li a {display: block; width: 100%; height: 100%; text-align: center; font-size: 0; border:1px solid #d6d6d6; box-sizing:border-box;}
+.main-foot .banner-roll .banner li a:before {content:""; display: inline-block; width: 0; height: 100%; vertical-align: middle;}
+.main-foot .banner-roll .banner li img {display: inline-block; vertical-align: middle; max-width:100%; max-height:100%;}
+
+
+
+
+/* Tablet CSS */ 
+@media screen and ( max-width:1024px ){
+	
+	/* width */
+	.main-top,
+ 	.maincon-wrap,
+	.maincon-wrap .maincon-sec .maincon-box .conbox,
+	.main-foot {width: 790px;}
+	
+	/* effect reset */
+	.main-top .mainarrow {display: none;}
+	.maincon-wrap .maincon-sec .maincon-btn:before {display: none;}
+	
+	.main-top .top-container {top:96px;}
+	
+	.maincon-wrap {height:1190px; text-align: center;}/* 20180809 정은정 수정 height:1140px */
+	.maincon-wrap:before {position: absolute;top: 0;left: 0;display: block;content:"";width:100%;height: 86px;background: #3f4652;z-index: 5;}
+	
+	.maincon-wrap .maincon-sec .maincon-btn {width:227px; margin:0; height:auto; padding:14px 5px 15px 5px; border-radius:7px;}
+	.maincon-wrap .maincon-sec.sec1 .maincon-btn,
+	.maincon-wrap .maincon-sec.sec2 .maincon-btn,
+	.maincon-wrap .maincon-sec.sec3 .maincon-btn {margin: 9px 11px 11px; background:#616b7b;}
+	.maincon-wrap .maincon-sec .maincon-btn.active {animation:none; background: #3b68b8;}
+	.maincon-wrap .maincon-sec.sec1 .maincon-btn.active {background: #3b68b8;}
+	.maincon-wrap .maincon-sec.sec2 .maincon-btn.active {background: #409dad;}
+	.maincon-wrap .maincon-sec.sec3 .maincon-btn.active {background: #b99568;}
+	.maincon-wrap .maincon-sec .maincon-box {}
+	.maincon-wrap .maincon-sec.sec1 .maincon-box,
+	.maincon-wrap .maincon-sec.sec2 .maincon-box,
+	.maincon-wrap .maincon-sec.sec3 .maincon-box {background-size:cover;}
+	.maincon-wrap .maincon-sec .maincon-box .conbox {margin:229px auto 0; height:884px;}
+	
+	 /* sec01 */
+	.mainbox {width: 100%; height:358px;}
+	.mainbox .visual {height: 298px;}
+	.introwrap {width:100%; height:100%;}
+	.introwrap .chairman {float: left; width: 49.25%; height: 176px; margin-top:1.5%;}
+	.introwrap .chairman .maintit {margin:20px 0;}
+	.introwrap .chairman .grade {margin-top: 0;}
+	.introwrap .chairman .chairmain_pic {width: 223px;bottom: -25px;}
+	.introwrap .onair {float: right; width: 49.25%; margin-top:1.5%;}
+	.introwrap .onair .onair-quick li a:after{display:none;}
+	
+	.popupwrap {width:39.4%; height:203px;} /* 20180809 정은정 수정 height:131px;*/
+	.noticewrap {width: 59.1%; height:253px; padding:18px;} /* 20180809 정은정 수정 height:181px; */
+	.noticewrap .notice .noticebox > li:first-child {margin-top: 15px;}
+	.noticewrap .notice .noticebox > li {margin-top: 10px;}
+	.noticewrap .notice .noticebox > li a {font-weight:bold;}
+	
+	.gowrap {width: 100%; height: 133px;}
+	.gowrap .golink {width:49.5%; height:100%;}
+	.gowrap .go-1 {float: left;}
+	.gowrap .go-2 {float: right;}
+	
+	/* sec02 */
+	.member {padding: 35px 81px;}
+	.member .maintit {margin-bottom: 20px;}
+	.member .maintit .titdesc {display: none;}
+	.member .prev {left:40px;}
+	.member .next {right:40px;}
+	
+	.memform {width: 190px;}
+	.member-search {padding:35px 30px; background-position: 22px bottom; background-size: 150px;}
+	
+	.member-map {position: relative; height: 596px; padding: 20px 80px;}
+	.mapimg-wrap {float: none;}
+	.maplist-wrap {float:none;width: 87%;margin: 0 auto;}
+	.maplist-wrap .titdesc {line-height:160%;} 
+	.maplist-wrap .titdesc br {display: block;} 
+	.maplist-wrap .titbox {position: absolute;top: 66px;right: 88px;padding: 120px 10px 10px 10px;background-position: 45% top;}
+	
+	/* sec03 */
+	.quickmenu {height:auto; text-align:center;}
+	.quickmenu .quick li {width:25%; margin:1.5% 0;}
+	.quickmenu .quick li:nth-child(-n+5){width:20%;}
+	.gallerywrap {padding:40px 80px; margin-top: 3%;}
+	.gallery {width: 409.5%;}
+	.gallery > li {width: 12%; margin: 0 0.5% 0 0;}
+	.gallerywrap .galnext {margin-left: -40px;}
+	.gallerywrap .galprev {margin-right: -40px;}
+}	
+@media screen and ( max-width:910px ){
+	.gallerywrap .galnext {margin-left: -96px;top: 0;margin-top: 15px;}
+	.gallerywrap .galprev {margin-right: -96px;top: 0;margin-top: 15px;}
+	.maincon-wrap .maincon-sec .maincon-btn {width:200px;}
+}
+
+/* Mobile CSS */ 
+@media screen and ( max-width:797px ){
+	
+	.fll,
+	.flr {float: none;}
+	
+	.mtit {font-size: 20px;}
+	.maintit.is-2 {font-size: 18px;}
+	.maintit.is-3 {font-size: 17px;}
+	
+	.maincon-wrap:before {display: none;}
+	#container {background:url("http://council.gb.go.kr/images/kr/main/sec_bg_1.png") no-repeat center; background-size:cover;}
+	
+	.main-top,
+ 	.maincon-wrap,
+	.maincon-wrap .maincon-sec .maincon-box .conbox {width: 98%;}
+	.main-foot {width: 96%;}
+	
+	.main-top .top-container {position: static; display: block; width: auto; top: 0; left: 0; margin: 0 auto;}	
+	.main-top .top-container .slogan {padding: 13px;}
+	.main-top .top-container img {max-width:80%;}
+	.maincon-wrap .maincon-sec {display: block;}
+	.maincon-wrap .maincon-sec .maincon-btn {display: none;}
+	.maincon-wrap .maincon-sec .maincon-box .conbox {margin: 0 auto;}
+	.maincon-wrap .maincon-sec.sec1 .maincon-box,
+	.maincon-wrap .maincon-sec.sec2 .maincon-box,
+	.maincon-wrap .maincon-sec.sec3 .maincon-box {background:none;}
+	
+	.maincon-wrap {height: auto;}
+	.maincon-wrap .maincon-sec .maincon-box {position: static; display: block !important;}
+	.maincon-wrap .maincon-sec .maincon-box .conbox {height: auto;}
+	
+	.member .mlist {width: 200%;}
+	
+	/* sec01 */
+	.mainbox {height: auto;}
+	.mainbox .visual {height: 230px;}
+	.mainbox .visual .visualimg > li img {width: 100%; height: 100%;}
+	
+	
+	.mainbox .today {height: auto; line-height:140%; padding: 15px; overflow: hidden;}
+	.mainbox .today .today-con {display: block;}
+	.mainbox .today .today-con .today-tit {display: block; font-size: 17px;}
+	.mainbox .today .today-con .today-tit .day {font-size: 25px;}
+	.mainbox .today .today-con .block {display: block; width: 100%; margin: 10px 0; padding: 10px; background: #4872a9; box-sizing:border-box;}
+ 	.mainbox .today .golink {padding:0 10px;}
+ 	
+ 	.introwrap .chairman .morebtn {position: static; display: inline-block; width: auto; height:auto; padding:10px 10px 9px 9px; box-sizing:border-box; text-align: left; line-height:120%; border-radius:0; }
+ 	.introwrap .chairman .morebtn br {display: none;}	
+ 	.introwrap .chairman .morebtn span:after {display: none;}
+ 	.introwrap .chairman .chairmain_pic {top:10px;}
+
+	.popupwrap {width: 100%; height: 100%;} 	
+ 	/*.popupwrap .popwrap {position: relative; width: 100%; height: 0; padding-top: 29.5%;}
+ 	.popupwrap .popwrap .popup {position: absolute; top: 0; left: 0;}
+ 	.popupwrap .popup .pop {position: relative; width: 5%;}
+ 	.popupwrap .popup .pop.nopop {background-color: #F1F1F1;backgroind-size:100% auto;}
+ 	.popupwrap .popup .pop > a img {position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%);}
+ 	.popupwrap .popup-img {z-index:10;}*/
+ 	.noticewrap {margin-top: 1.5%; width: 100%; height: 315px;}
+ 	.noticewrap .notice > li {width:50%; float:left;}
+ 	.noticewrap .notice .maintit {display: block; font-size: 15px;}
+ 	.noticewrap .notice .maintit > a {display: block; border:1px solid #d6d6d6; border-width:1px 1px 0 0; padding: 10px; text-align: center;}
+ 	.noticewrap .notice > li:first-child .maintit > a,
+ 	.noticewrap .notice > li:first-child + li + li .maintit > a {border-left-width:1px;} 
+ 	.noticewrap .notice > li + li + li .maintit > a {border-bottom-width:1px;} 
+ 	.noticewrap .notice .noticebox {border:none; top:80px;}
+ 	.noticewrap .notice .noticebox > li:nth-child(n+4) {display: block;}
+ 	.noticewrap .notice .noticebox > li {margin-top:6px;}
+ 	
+ 	.noticewrap .notice .morebtn-ico {position: absolute;top: auto;right: auto;bottom: -5px;left: 0;width: 100%;height: 30px;line-height:30px;border-width:1px 0;text-align: center;background: none;font-size: 14px;}
+ 	.noticewrap .notice .morebtn-ico .mtext {display: inline-block;}
+ 	.noticewrap .notice .on .maintit {background-color: #5367C6;}
+ 	.noticewrap .notice .on .maintit a {color:#fff;}
+ 	.noticewrap .notice .on .maintit:after {display: none;}
+ 	/*.noticewrap .notice .morebtn-ico {display: block;}
+ 	.noticewrap .notice > li:first-child .morebtn-ico,
+ 	.noticewrap .notice > li:first-child + li + li .morebtn-ico {right:50%;}
+ 	.noticewrap .notice > li:first-child + li + li .morebtn-ico {top: 40px;} 
+ 	.noticewrap .notice > li:first-child + li + li + li .morebtn-ico {top: 40px;} */
+ 	
+ 	.member {margin-top: 1.5%; width: 100%; height: auto; padding: 20px 40px; box-sizing:border-box;}
+ 	.member .next {right: 4px;}
+ 	.member .prev {left: 4px;}
+ 	.member .mlist-wrap {height: 164px; overflow: hidden;}
+ 	
+ 	.member-search {margin-top: 1.5%; width: 100%; height: auto; background-position: 80% 16px; padding: 23px;}
+ 	.member-search .maintit {}
+ 	.memform {margin-top: 67px; width: 100%; height: auto;}
+ 	.memform li + li {margin-top: 0;}
+ 	.memform li {width: 49%; margin:0 1% 10px 0; float: left;}
+ 	
+ 	.member-map {margin-top: 1.5%; height: auto; padding:0;}
+ 	.mapimg-wrap {margin: 0 auto 20px;}
+ 	.maplist-wrap {width: 100%; padding: 20px; box-sizing:border-box;}
+ 	.maplist-wrap .titbox {position: static; padding: 0 0 0 66px; background-size: 50px auto; background-position: left center;}
+ 	.maplist-wrap .mtit {margin-bottom: 7px;}
+ 	.maplist-wrap .titdesc br {display: none;}
+ 	.maplist-wrap .mapname-list li .mapname.nodata {display: none;}
+ 	
+ 	.quickmenu {margin-top: 1.5%; height: auto;}
+ 	.quickmenu .quick {padding: 20px 10px;}
+ 	.quickmenu .quick li {font-size: 15px;}
+ 	.quickmenu .quick li span:before {width: 84px; height: 80px; background-size:70%;}
+ 	
+ 	.gallerywrap {padding:20px; height:auto;}
+ 	.gallery > li .thumb {height: 0; padding-top: 60%; position: relative;}
+ 	.gallery > li .thumb > a {position: absolute; top: 0; left: 0;}
+ 	.gallery > li .thumb > a img {position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%);}
+ 	.gallery > li .desc {height: auto; padding: 15px;}
+ 	.gallery > li .desc .galtit {display: block; width: 100%; height: auto; overflow: hidden; white-space: nowrap; word-wrap: normal; text-overflow: ellipsis; box-sizing:border-box; font-size: 15px;}
+ 	.gallery > li .desc .date {font-size: 13px;}
+ 	.gallerywrap .galbtn {width: 45px; height: 45px;}
+ 	.gallerywrap .galprev {margin-right: 0; right: auto; left: 10px; background: url("http://council.gb.go.kr/images/kr/main/galbtn_left_on.png") no-repeat center;background-size:contain; transition:background 0.3s;}
+ 	.gallerywrap .galnext {margin-left: 0; left: auto; right: 10px;background: url("http://council.gb.go.kr/images/kr/main/galbtn_right_on.png") no-repeat center;background-size:contain; transition:background 0.3s;}
+ 	.gallerywrap .galprev:hover {background: url("http://council.gb.go.kr/images/kr/main/galbtn_left.png") no-repeat center;background-size:contain;}
+ 	.gallerywrap .galnext:hover {background: url("http://council.gb.go.kr/images/kr/main/galbtn_right.png") no-repeat center;background-size:contain;}
+ 	.gallerywrap .btnline {font-size: 14px;}
+ 	
+ 	.maplist-wrap .mapname-list li {width: 25%;}
+ 	.maplist-wrap .mapname-list li.mno {display: none;}
+}
+@media screen and ( max-width:640px ){
+	
+	.gowrap {height: auto;}
+	.gowrap .golink {height: auto;}
+	.gowrap .golink a{padding: 20px 15px; background-size: auto 100%; background-position: 90%;}
+	
+	.introwrap .chairman {float: none; width:100%; height: auto;}
+ 	.introwrap .onair {float: none; width: 100%;}
+
+	.quickmenu {text-align: center;}
+	.quickmenu .quick li,
+	.quickmenu .quick li:nth-child(-n+5){width: 33.333%;}
+	.gallerywrap .mtit {margin-bottom: 20px;}
+	
+	.main-foot {padding-left: 100px;}
+	.main-foot .banner-tit {width: 100px;}
+	.main-foot .banner-roll .banner li {padding: 0 15px;}
+}
+@media screen and ( max-width:480px ){
+	.popupwrap .popup li img{width:100%;}
+/*	.popupwrap .popwrap {padding-top: 57%;}
+	.popupwrap .popup .pop {width: 10%;}*/
+	.gowrap .golink {float: none; width: 100%;} 
+ 	.mainbox .today .golink {float: left; width: 50%; height:40px; line-height:40px; border-left-width:0; box-sizing:border-box;}	
+ 	.mainbox .today .go-1 {border-left-width:1px;}
+ 	.maplist-wrap .mapname-list li {width: 33.333%;}
+ 	.gallerywrap .galbtn {width: 40px; height: 40px;}
+}
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/*
+@-webkit-keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -3px, 0);
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+  }
+
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+.bounce {
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+}
+
+@-webkit-keyframes rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+*/
+
+@keyframes rotateInDownLeft {
+  from {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: rotate3d(0, 0, 1, -45deg);
+    transform: rotate3d(0, 0, 1, -45deg);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform-origin: left bottom;
+    transform-origin: left bottom;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
